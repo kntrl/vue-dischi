@@ -19,6 +19,12 @@ var app = new Vue({
 			});
 			return categoriesArray;
 		},
+		sortDesc : function() {
+			this.albums.sort((a,b) => parseInt(b.year) -  parseInt(a.year));
+		},
+		sortAsc : function() {
+			this.albums.sort((a,b) => parseInt(a.year) -  parseInt(b.year));
+		},
 	},
 	mounted() {
 		//requesting API the albums array
@@ -28,9 +34,19 @@ var app = new Vue({
 				const result = response.data;
 				this.albums = [...result.response];
 				console.log(this.albums);
-
+				//creating genre array for select filter
 				this.genres = this.getFilter(this.albums, "genre");
 				console.log(this.genres);
+				//sorting albums array based on release year
+				// this.albums.sort((a, b) =>
+				// 	parseInt(a.year) - parseInt(b.year)
+				// 		? 1
+				// 		: parseInt(a.year) - parseInt(a.year)
+				// 		? -1
+				// 		: 0
+				//);
+
+				console.log(this.albums);
 			});
 	},
 });

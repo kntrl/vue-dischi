@@ -35,17 +35,25 @@
 			<main>
 				<!-- filters -->
 				<div class="filters">
-					<select
+					<div class="genre-select">
+						<select
 						name="genre"
 						id="genre"
 						aria-label="Filter by genre"
 						v-model="filteredGenre"
+						class="secondary"
 					>
-						<option value="all" selected="selected">Tutti i Generi</option>
+						<option value="all">Tutti i Generi</option>
 						<option v-for="genre in genres" :value="genre" v-model="filteredGenre">
 							{{genre}}
 						</option>
 					</select>
+					</div>
+				<div class="sort-year txt-gray">
+					<div @click="sortDesc">Ordina dal più recente</div>
+					<div @click="sortAsc">Ordina dal meno recente</div>
+				</div>
+
 				</div>
 				<!-- filters end -->
 

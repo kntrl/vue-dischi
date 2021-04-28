@@ -51,6 +51,22 @@ header .logo {
 .filters {
 	padding: 20px 0;
 	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.filters select {
+	padding: 5px 20px;
+	font-size: 1.05rem;
+	border: none;
+	outline: none;
+}
+
+.sort-year {
+	cursor:pointer;
+	padding: 0 15px;
+	font-size: 0.75rem;
 }
 
 /* ALMBUMS */
