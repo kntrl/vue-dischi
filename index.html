@@ -33,10 +33,30 @@
 
 			<!-- MAIN -->
 			<main>
+				<!-- filters -->
+				<div class="filters">
+					<select
+						name="genre"
+						id="genre"
+						aria-label="Filter by genre"
+						v-model="filteredGenre"
+					>
+						<option value="all" selected="selected">Tutti i Generi</option>
+						<option v-for="genre in genres" :value="genre" v-model="filteredGenre">
+							{{genre}}
+						</option>
+					</select>
+				</div>
+				<!-- filters end -->
+
 				<!-- albums container -->
 				<div class="albums">
 					<!-- single album card -->
-					<div class="album-card secondary" v-for="album in albums">
+					<div
+						v-if="album.genre == filteredGenre || filteredGenre == 'all'"
+						class="album-card secondary"
+						v-for="album in albums"
+					>
 						<div class="album-cover">
 							<img :src="album.poster" :alt="`${album.title} - Cover`" />
 						</div>

@@ -46,22 +46,26 @@ header .logo {
 /*==================
         MAIN
 ====================*/
-main {
-	padding: 40px 5px 0;
+
+/* filters */
+.filters {
+	padding: 20px 0;
+	text-align: center;
 }
 
+/* ALMBUMS */
 .albums {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
 }
 
-/* ALBUM CARDS */
+/* album cards */
 .album-card {
 	flex-grow: 0;
 	flex-basis: 220px;
 	padding: 10px 10px;
-	margin: 10px 1%;
+	margin: 0px 1% 10px;
 	text-align: center;
 	border-radius: 10px;
 }
