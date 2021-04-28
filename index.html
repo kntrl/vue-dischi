@@ -36,11 +36,13 @@
 				<!-- albums container -->
 				<div class="albums">
 					<!-- single album card -->
-					<div class="album-card secondary">
-						<div class="album-cover"><img src="img/download.png" alt="" /></div>
-						<div class="album-title">Album title</div>
-						<div class="album-author txt-gray">Author</div>
-						<div class="album-rel-year txt-gray">Year</div>
+					<div class="album-card secondary" v-for="album in albums">
+						<div class="album-cover">
+							<img :src="album.poster" :alt="`${album.title} - Cover`" />
+						</div>
+						<div class="album-title">{{album.title}}</div>
+						<div class="album-author txt-gray">{{album.author}}</div>
+						<div class="album-rel-year txt-gray">{{album.year}}</div>
 					</div>
 					<!-- single album card ends-->
 				</div>
@@ -48,5 +50,8 @@
 			</main>
 			<!-- MAIN ENDS -->
 		</div>
+
+		<!-- custom JS -->
+		<script src="js/script.js"></script>
 	</body>
 </html>
