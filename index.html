@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vue - Dischi</title>
+		<!-- Fontawesome CDN-->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		/>
+		<!-- google fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- custom CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- axios -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+		<!-- Vue.js v2.6.12 -->
+		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	</head>
+	<body class="primary">
+		<div id="app">
+			<!-- HEADER -->
+			<header class="secondary">
+				<div class="logo"><img src="img/download.png" alt="Spotify - Logo" /></div>
+			</header>
+			<!-- HEADER ENDS -->
+
+			<!-- MAIN -->
+			<main>
+				<!-- albums container -->
+				<div class="albums">
+					<!-- single album card -->
+					<div class="album-card secondary">
+						<div class="album-cover"><img src="img/download.png" alt="" /></div>
+						<div class="album-title">Album title</div>
+						<div class="album-author txt-gray">Author</div>
+						<div class="album-rel-year txt-gray">Year</div>
+					</div>
+					<!-- single album card ends-->
+				</div>
+				<!-- album container ends -->
+			</main>
+			<!-- MAIN ENDS -->
+		</div>
+	</body>
+</html>

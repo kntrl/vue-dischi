@@ -1,0 +1,79 @@
+/*==================
+        RESETS
+====================*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	width: 100%;
+}
+
+/*==================
+        COMMON
+====================*/
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+.primary {
+	background-color: #1e2e3c;
+}
+
+.secondary {
+	background-color: #2e3b46;
+	color: #fff;
+}
+
+.txt-gray {
+	color: #7e7e7e;
+}
+
+/*==================
+        HEADER
+====================*/
+header {
+	padding: 10px;
+}
+
+header .logo {
+	width: 50px;
+}
+
+/*==================
+        MAIN
+====================*/
+main {
+	padding: 40px 5px 0;
+}
+
+.albums {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+/* ALBUM CARDS */
+.album-card {
+	flex-grow: 0;
+	flex-basis: 220px;
+	padding: 10px 10px;
+	margin: 10px 1%;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.album-title {
+	padding: 15px 0;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+.album-author,
+.album-rel-year {
+	font-size: 0.9rem;
+}
