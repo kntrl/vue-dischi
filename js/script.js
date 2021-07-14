@@ -36,17 +36,6 @@ var app = new Vue({
 				console.log(this.albums);
 				//creating genre array for select filter
 				this.genres = this.getFilter(this.albums, "genre");
-				console.log(this.genres);
-				//sorting albums array based on release year
-				// this.albums.sort((a, b) =>
-				// 	parseInt(a.year) - parseInt(b.year)
-				// 		? 1
-				// 		: parseInt(a.year) - parseInt(a.year)
-				// 		? -1
-				// 		: 0
-				//);
-
-				console.log(this.albums);
 			});
 	},
 });
